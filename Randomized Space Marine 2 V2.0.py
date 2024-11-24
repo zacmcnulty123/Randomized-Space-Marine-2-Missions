@@ -100,15 +100,15 @@ def getRandomWeapon1(selectedClass):
 #Get a random secondary weapon
 def getRandomWeapon2(selectedClass):
     if(selectedClass =="Vanguard"):
-        secondaryGunArry = ["Bolt Pistol", "Plasma Pistol", "Neo-Volkite"]
+        secondaryGunArry = ["Bolt Pistol", "Neo-Volkite"]
     elif(selectedClass =="Sniper"):
-        secondaryGunArry = ["Bolt Pistol", "Plasma Pistol"]
+        secondaryGunArry = ["Bolt Pistol"]
     elif(selectedClass =="Bulwark"):
         secondaryGunArry = ["Bolt Pistol", "Neo-Volkite"] 
     elif(selectedClass =="Heavy" or selectedClass == "Tactical"):
         secondaryGunArry = ["Bolt Pistol"] 
     elif(selectedClass =="Assault"):
-        secondaryGunArry = ["Neo-Volkite"]
+        secondaryGunArry = ["Neo-Volkite", "Heavy Bolt Pistol", "Bolt Pistol"]
 
     gun2 = random.choice(secondaryGunArry)
     return gun2
